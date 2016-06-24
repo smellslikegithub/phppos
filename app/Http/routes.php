@@ -17,6 +17,7 @@ Route::get('welcome', function () {
      //return view('admin.layout.master');
 	//return view('pages.registerStore');
 });
+
 Route::get('user', function () {
     return view('user.user');
 });

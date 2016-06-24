@@ -25,6 +25,15 @@ class HomeController extends Controller
      */
     public function index()
     {
+        if(Auth::user()->role==0){ //Super Admin (Us)
+            
+        }
+        else if(Auth::user()->role==1){ //Admin (Store Administrator)
+            
+        }
+        else if(Auth::user()->role==2){ //Store Employee
+            
+        }
         return view('layouts.dashboard');
     }
 }
